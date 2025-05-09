@@ -1,0 +1,1976 @@
+
+Gurobi 8.1.0 (win64, Python) logging started 10/23/18 20:12:33
+
+Academic license - for non-commercial use only
+Optimize a model with 178 rows, 104 columns and 618 nonzeros
+Variable types: 52 continuous, 52 integer (52 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+12]
+  Objective range  [2e+02, 2e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e-01, 1e+00]
+Warning: Model contains large matrix coefficient range
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 36 rows and 14 columns
+Presolve time: 0.01s
+Presolved: 142 rows, 90 columns, 513 nonzeros
+Variable types: 46 continuous, 44 integer (44 binary)
+Found heuristic solution: objective 3230.0000000
+Found heuristic solution: objective 3200.0000000
+
+Root relaxation: objective 3.140000e+03, 68 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 3140.00000    0    4 3200.00000 3140.00000  1.87%     -    0s
+H    0     0                    3140.0000000 3140.00000  0.00%     -    0s
+
+Explored 1 nodes (68 simplex iterations) in 0.12 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 3: 3140 3200 3230 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.140000000000e+03, best bound 3.140000000000e+03, gap 0.0000%
+
+Gurobi 8.1.0 (win64, Python) logging started 10/23/18 20:18:48
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 10/23/18 20:18:55
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 10/23/18 20:19:08
+
+Academic license - for non-commercial use only
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Optimize a model with 178 rows, 104 columns and 618 nonzeros
+Variable types: 52 continuous, 52 integer (52 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+12]
+  Objective range  [2e+02, 2e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e-01, 1e+00]
+Warning: Model contains large matrix coefficient range
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 36 rows and 14 columns
+Presolve time: 0.00s
+Presolved: 142 rows, 90 columns, 513 nonzeros
+Variable types: 46 continuous, 44 integer (44 binary)
+Found heuristic solution: objective 3230.0000000
+Found heuristic solution: objective 3200.0000000
+
+Root relaxation: objective 3.140000e+03, 68 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 3140.00000    0    4 3200.00000 3140.00000  1.87%     -    0s
+H    0     0                    3140.0000000 3140.00000  0.00%     -    0s
+
+Explored 1 nodes (68 simplex iterations) in 0.03 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 3: 3140 3200 3230 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.140000000000e+03, best bound 3.140000000000e+03, gap 0.0000%
+
+Gurobi 8.1.0 (win64, Python) logging started 10/23/18 20:24:24
+
+Academic license - for non-commercial use only
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Optimize a model with 178 rows, 104 columns and 618 nonzeros
+Variable types: 52 continuous, 52 integer (52 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+12]
+  Objective range  [2e+02, 2e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e-01, 1e+00]
+Warning: Model contains large matrix coefficient range
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 36 rows and 14 columns
+Presolve time: 0.00s
+Presolved: 142 rows, 90 columns, 513 nonzeros
+Variable types: 46 continuous, 44 integer (44 binary)
+Found heuristic solution: objective 3230.0000000
+Found heuristic solution: objective 3200.0000000
+
+Root relaxation: objective 3.140000e+03, 68 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 3140.00000    0    4 3200.00000 3140.00000  1.87%     -    0s
+H    0     0                    3140.0000000 3140.00000  0.00%     -    0s
+
+Explored 1 nodes (68 simplex iterations) in 0.02 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 3: 3140 3200 3230 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.140000000000e+03, best bound 3.140000000000e+03, gap 0.0000%
+
+Gurobi 8.1.0 (win64, Python) logging started 10/23/18 20:24:40
+
+Academic license - for non-commercial use only
+Optimize a model with 178 rows, 104 columns and 618 nonzeros
+Variable types: 52 continuous, 52 integer (52 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+12]
+  Objective range  [2e+02, 2e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e-01, 1e+00]
+Warning: Model contains large matrix coefficient range
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 36 rows and 14 columns
+Presolve time: 0.00s
+Presolved: 142 rows, 90 columns, 513 nonzeros
+Variable types: 46 continuous, 44 integer (44 binary)
+Found heuristic solution: objective 3230.0000000
+Found heuristic solution: objective 3200.0000000
+
+Root relaxation: objective 3.140000e+03, 68 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 3140.00000    0    4 3200.00000 3140.00000  1.87%     -    0s
+H    0     0                    3140.0000000 3140.00000  0.00%     -    0s
+
+Explored 1 nodes (68 simplex iterations) in 0.02 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 3: 3140 3200 3230 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.140000000000e+03, best bound 3.140000000000e+03, gap 0.0000%
+
+Gurobi 8.1.0 (win64, Python) logging started 10/23/18 20:53:41
+
+Academic license - for non-commercial use only
+Optimize a model with 178 rows, 104 columns and 618 nonzeros
+Variable types: 52 continuous, 52 integer (52 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+12]
+  Objective range  [2e+02, 2e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e-01, 1e+00]
+Warning: Model contains large matrix coefficient range
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 36 rows and 14 columns
+Presolve time: 0.00s
+Presolved: 142 rows, 90 columns, 513 nonzeros
+Variable types: 46 continuous, 44 integer (44 binary)
+Found heuristic solution: objective 3230.0000000
+Found heuristic solution: objective 3200.0000000
+
+Root relaxation: objective 3.140000e+03, 68 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 3140.00000    0    4 3200.00000 3140.00000  1.87%     -    0s
+H    0     0                    3140.0000000 3140.00000  0.00%     -    0s
+
+Explored 1 nodes (68 simplex iterations) in 0.01 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 3: 3140 3200 3230 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.140000000000e+03, best bound 3.140000000000e+03, gap 0.0000%
+
+Gurobi 8.1.0 (win64, Python) logging started 10/23/18 20:54:17
+
+Academic license - for non-commercial use only
+Optimize a model with 178 rows, 104 columns and 618 nonzeros
+Variable types: 52 continuous, 52 integer (52 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+12]
+  Objective range  [2e+02, 2e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e-01, 1e+00]
+Warning: Model contains large matrix coefficient range
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 36 rows and 14 columns
+Presolve time: 0.00s
+Presolved: 142 rows, 90 columns, 513 nonzeros
+Variable types: 46 continuous, 44 integer (44 binary)
+Found heuristic solution: objective 3230.0000000
+Found heuristic solution: objective 3200.0000000
+
+Root relaxation: objective 3.140000e+03, 68 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 3140.00000    0    4 3200.00000 3140.00000  1.87%     -    0s
+H    0     0                    3140.0000000 3140.00000  0.00%     -    0s
+
+Explored 1 nodes (68 simplex iterations) in 0.02 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 3: 3140 3200 3230 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.140000000000e+03, best bound 3.140000000000e+03, gap 0.0000%
+
+Gurobi 8.1.0 (win64, Python) logging started 10/23/18 20:54:23
+
+Academic license - for non-commercial use only
+Optimize a model with 178 rows, 104 columns and 618 nonzeros
+Variable types: 52 continuous, 52 integer (52 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+12]
+  Objective range  [2e+02, 2e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e-01, 1e+00]
+Warning: Model contains large matrix coefficient range
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 36 rows and 14 columns
+Presolve time: 0.00s
+Presolved: 142 rows, 90 columns, 513 nonzeros
+Variable types: 46 continuous, 44 integer (44 binary)
+Found heuristic solution: objective 3230.0000000
+Found heuristic solution: objective 3200.0000000
+
+Root relaxation: objective 3.140000e+03, 68 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 3140.00000    0    4 3200.00000 3140.00000  1.87%     -    0s
+H    0     0                    3140.0000000 3140.00000  0.00%     -    0s
+
+Explored 1 nodes (68 simplex iterations) in 0.03 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 3: 3140 3200 3230 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.140000000000e+03, best bound 3.140000000000e+03, gap 0.0000%
+
+Gurobi 8.1.0 (win64, Python) logging started 10/23/18 20:54:50
+
+Academic license - for non-commercial use only
+Optimize a model with 178 rows, 104 columns and 618 nonzeros
+Variable types: 52 continuous, 52 integer (52 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+12]
+  Objective range  [2e+02, 2e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e-01, 1e+00]
+Warning: Model contains large matrix coefficient range
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 36 rows and 14 columns
+Presolve time: 0.01s
+Presolved: 142 rows, 90 columns, 513 nonzeros
+Variable types: 46 continuous, 44 integer (44 binary)
+Found heuristic solution: objective 3230.0000000
+Found heuristic solution: objective 3200.0000000
+
+Root relaxation: objective 3.140000e+03, 68 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 3140.00000    0    4 3200.00000 3140.00000  1.87%     -    0s
+H    0     0                    3140.0000000 3140.00000  0.00%     -    0s
+
+Explored 1 nodes (68 simplex iterations) in 0.03 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 3: 3140 3200 3230 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.140000000000e+03, best bound 3.140000000000e+03, gap 0.0000%
+
+Gurobi 8.1.0 (win64, Python) logging started 10/23/18 20:56:01
+
+Academic license - for non-commercial use only
+Optimize a model with 178 rows, 104 columns and 618 nonzeros
+Variable types: 52 continuous, 52 integer (52 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+12]
+  Objective range  [2e+02, 2e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e-01, 1e+00]
+Warning: Model contains large matrix coefficient range
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 36 rows and 14 columns
+Presolve time: 0.00s
+Presolved: 142 rows, 90 columns, 513 nonzeros
+Variable types: 46 continuous, 44 integer (44 binary)
+Found heuristic solution: objective 3230.0000000
+Found heuristic solution: objective 3200.0000000
+
+Root relaxation: objective 3.140000e+03, 68 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 3140.00000    0    4 3200.00000 3140.00000  1.87%     -    0s
+H    0     0                    3140.0000000 3140.00000  0.00%     -    0s
+
+Explored 1 nodes (68 simplex iterations) in 0.01 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 3: 3140 3200 3230 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.140000000000e+03, best bound 3.140000000000e+03, gap 0.0000%
+
+Gurobi 8.1.0 (win64, Python) logging started 10/23/18 21:04:29
+
+Academic license - for non-commercial use only
+Optimize a model with 178 rows, 104 columns and 618 nonzeros
+Variable types: 52 continuous, 52 integer (52 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+12]
+  Objective range  [2e+02, 2e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e-01, 1e+00]
+Warning: Model contains large matrix coefficient range
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 36 rows and 14 columns
+Presolve time: 0.00s
+Presolved: 142 rows, 90 columns, 513 nonzeros
+Variable types: 46 continuous, 44 integer (44 binary)
+Found heuristic solution: objective 3230.0000000
+Found heuristic solution: objective 3200.0000000
+
+Root relaxation: objective 3.140000e+03, 68 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 3140.00000    0    4 3200.00000 3140.00000  1.87%     -    0s
+H    0     0                    3140.0000000 3140.00000  0.00%     -    0s
+
+Explored 1 nodes (68 simplex iterations) in 0.07 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 3: 3140 3200 3230 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.140000000000e+03, best bound 3.140000000000e+03, gap 0.0000%
+
+Gurobi 8.1.0 (win64, Python) logging started 10/23/18 21:04:50
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 10/23/18 21:05:53
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 10/23/18 21:07:46
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 10/23/18 21:21:18
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 10/23/18 21:22:30
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 10/23/18 21:23:05
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 10/23/18 21:34:13
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 10/23/18 21:36:54
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 10/23/18 21:37:50
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 10/23/18 21:38:57
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 10/23/18 21:39:28
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 10/23/18 21:40:24
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 10/23/18 21:40:39
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 10/23/18 21:40:47
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 10/23/18 21:40:58
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 10/23/18 21:44:50
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 10/23/18 21:45:00
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 10/23/18 21:45:09
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 10/23/18 21:46:52
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 10/24/18 13:38:58
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 10/24/18 13:39:16
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 11/01/18 10:44:18
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 01/31/19 14:20:14
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 01/31/19 14:20:33
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 01/31/19 14:22:27
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 01/31/19 14:22:58
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 01/31/19 14:33:42
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 01/31/19 14:33:57
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 01/31/19 14:36:01
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 01/31/19 14:36:12
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 01/31/19 14:42:08
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 01/31/19 14:42:55
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 01/31/19 15:00:46
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 01/31/19 15:01:06
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 01/31/19 15:03:13
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 01/31/19 15:04:34
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 01/31/19 15:06:06
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 01/31/19 15:06:36
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 01/31/19 15:12:48
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 01/31/19 15:15:40
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 01/31/19 15:16:02
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 01/31/19 15:16:04
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 01/31/19 15:16:56
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 01/31/19 15:17:05
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 01/31/19 15:20:30
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 01/31/19 15:20:41
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 01/31/19 16:33:02
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 01/31/19 16:33:16
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 01/31/19 16:35:33
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 01/31/19 16:36:23
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 01/31/19 16:36:59
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 01/31/19 16:52:47
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 09:51:26
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 09:52:20
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 09:52:52
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 09:52:57
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 09:55:03
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 09:55:22
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 10:02:32
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 10:02:57
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 10:03:54
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 10:05:14
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 10:13:53
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 10:14:27
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 10:14:40
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 10:16:10
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 10:16:42
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 10:17:51
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 10:26:32
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 10:27:00
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 10:28:12
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 10:29:53
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 10:30:17
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 10:31:51
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 10:32:29
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 10:46:03
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 10:46:28
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 10:46:48
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 10:48:18
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 10:48:31
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 10:48:45
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 10:49:28
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 10:49:47
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 10:50:16
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 10:50:37
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 10:51:26
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 10:51:37
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 10:52:12
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 10:52:32
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 10:53:19
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 10:59:36
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 11:32:59
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 11:52:48
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 12:02:44
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 12:03:24
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 12:03:54
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 12:11:20
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 12:11:44
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 12:11:56
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 12:12:05
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 12:12:12
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 12:14:13
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 12:14:30
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 12:15:00
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 12:15:15
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 12:17:46
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 12:18:22
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 12:19:26
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 12:26:14
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 13:53:09
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 15:43:04
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 16:12:50
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 16:26:43
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 16:26:59
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 16:33:19
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 16:34:11
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 16:34:16
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 16:35:22
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 16:35:39
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 16:36:20
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 16:37:33
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 16:46:46
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 16:47:32
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 16:49:00
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 16:49:38
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 16:50:06
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 16:51:00
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 16:51:35
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 16:51:57
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 16:52:33
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 16:53:16
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 16:53:24
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 16:57:08
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 16:58:28
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 16:59:12
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 16:59:58
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 18:27:39
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 18:27:58
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 18:28:12
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 18:35:32
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 18:35:43
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 18:36:43
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 18:37:07
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 18:40:08
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 18:44:18
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 18:44:35
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 18:47:16
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 18:47:33
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 18:47:49
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 18:48:44
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 18:49:22
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 18:49:50
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 18:51:58
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 18:53:56
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 18:55:24
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 18:55:25
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 18:55:27
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/01/19 18:55:27
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/05/19 10:38:29
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/06/19 10:09:11
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/06/19 10:10:07
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/06/19 10:10:30
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/06/19 10:12:33
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/06/19 10:13:16
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/12/19 19:28:24
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/12/19 19:30:19
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/12/19 19:31:07
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/12/19 19:32:14
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/12/19 19:32:44
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/12/19 19:33:19
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/12/19 19:33:53
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/12/19 19:35:46
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/12/19 19:36:02
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/12/19 19:38:14
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/12/19 19:39:28
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/12/19 19:39:49
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/12/19 19:40:29
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/12/19 19:40:39
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/12/19 19:41:19
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 05/07/19 14:17:31
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 05/07/19 16:10:35
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 05/07/19 16:16:33
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 05/07/19 16:22:29
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 05/07/19 16:26:19
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 05/07/19 16:31:08
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 05/07/19 16:31:43
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 05/07/19 16:42:42
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 05/07/19 16:43:25
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 05/07/19 16:44:33
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 05/07/19 16:45:35
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 05/07/19 16:45:49
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 05/07/19 16:59:48
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 05/07/19 17:00:33
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 05/07/19 17:02:39
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 05/07/19 17:14:40
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 05/07/19 17:54:59
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 05/31/19 11:56:02
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 05/31/19 15:17:32
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 05/31/19 15:18:51
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 05/31/19 15:25:53
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 05/31/19 15:28:07
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 05/31/19 15:30:51
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 05/31/19 15:31:30
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 05/31/19 15:32:03
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 05/31/19 15:33:46
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 05/31/19 15:44:55
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 05/31/19 15:48:05
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 05/31/19 15:48:19
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 05/31/19 15:49:01
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 05/31/19 15:49:28
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 05/31/19 15:49:50
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 05/31/19 15:54:18
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 05/31/19 15:55:13
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 05/31/19 15:57:29
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 05/31/19 16:00:17
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 05/31/19 16:00:48
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 05/31/19 16:02:16
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 05/31/19 16:02:56
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 05/31/19 16:05:07
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 05/31/19 16:05:26
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 05/31/19 16:05:40
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 05/31/19 16:10:02
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 06/04/19 11:29:26
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 06/04/19 13:21:26
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 06/05/19 12:52:11
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 06/05/19 12:57:11
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 06/05/19 14:53:32
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 06/05/19 16:04:47
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 06/18/19 09:26:26
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 06/18/19 09:27:02
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 06/18/19 09:36:09
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 06/18/19 10:17:07
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 06/18/19 10:19:14
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 06/18/19 10:21:26
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 06/18/19 10:21:38
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 06/18/19 11:03:12
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 06/18/19 11:09:34
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 06/18/19 11:10:31
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 06/18/19 11:18:34
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 06/18/19 11:21:48
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 06/18/19 11:22:11
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 06/18/19 11:22:24
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 06/18/19 11:22:36
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 06/18/19 11:35:14
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 06/18/19 12:00:26
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 06/18/19 12:02:59
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 06/18/19 12:04:29
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 06/18/19 12:52:06
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 06/18/19 12:53:41
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 06/18/19 13:35:05
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 06/18/19 13:35:07
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 06/18/19 13:35:13
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 06/18/19 13:35:35
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 06/18/19 14:04:08
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 06/18/19 14:10:55
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 06/19/19 14:07:44
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 06/21/19 09:11:23
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 06/21/19 09:11:51
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 06/21/19 09:14:40
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 06/21/19 09:17:57
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 06/21/19 09:19:03
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 06/21/19 09:19:17
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 07/01/19 16:25:27
+
+Academic license - for non-commercial use only
+Warning: Gurobi version mismatch between Python 8.1.1 and C library 8.1.0
+
+Gurobi 8.1.0 (win64, Python) logging started 07/01/19 16:28:37
+
+Academic license - for non-commercial use only
+Warning: Gurobi version mismatch between Python 8.1.1 and C library 8.1.0
+
+Gurobi 8.1.0 (win64, Python) logging started 07/01/19 17:19:34
+
+Academic license - for non-commercial use only
+Warning: Gurobi version mismatch between Python 8.1.1 and C library 8.1.0
+
+Gurobi 8.1.0 (win64, Python) logging started 07/01/19 17:23:30
+
+Academic license - for non-commercial use only
+Warning: Gurobi version mismatch between Python 8.1.1 and C library 8.1.0
+
+Gurobi 8.1.0 (win64, Python) logging started 07/01/19 17:25:35
+
+Academic license - for non-commercial use only
+Warning: Gurobi version mismatch between Python 8.1.1 and C library 8.1.0
+
+Gurobi 8.1.0 (win64, Python) logging started 07/01/19 18:39:31
+
+Academic license - for non-commercial use only
+Warning: Gurobi version mismatch between Python 8.1.1 and C library 8.1.0
+
+Gurobi 8.1.0 (win64, Python) logging started 07/01/19 18:40:04
+
+Academic license - for non-commercial use only
+Warning: Gurobi version mismatch between Python 8.1.1 and C library 8.1.0
+
+Gurobi 8.1.0 (win64, Python) logging started 07/01/19 18:40:40
+
+Academic license - for non-commercial use only
+Warning: Gurobi version mismatch between Python 8.1.1 and C library 8.1.0
+
+Gurobi 8.1.0 (win64, Python) logging started 07/02/19 11:57:39
+
+Academic license - for non-commercial use only
+Warning: Gurobi version mismatch between Python 8.1.1 and C library 8.1.0
+
+Gurobi 8.1.0 (win64, Python) logging started 07/02/19 15:01:55
+
+Academic license - for non-commercial use only
+Warning: Gurobi version mismatch between Python 8.1.1 and C library 8.1.0
+
+Gurobi 8.1.0 (win64, Python) logging started 07/02/19 15:02:53
+
+Academic license - for non-commercial use only
+Warning: Gurobi version mismatch between Python 8.1.1 and C library 8.1.0
+
+Gurobi 8.1.0 (win64, Python) logging started 07/03/19 10:30:49
+
+Academic license - for non-commercial use only
+Warning: Gurobi version mismatch between Python 8.1.1 and C library 8.1.0
+
+Gurobi 8.1.1 (win64, Python) logging started 07/10/19 13:12:06
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 07/10/19 13:14:03
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 07/10/19 13:40:14
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 07/23/19 16:14:50
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 07/24/19 11:35:07
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 07/24/19 11:35:12
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 07/24/19 11:35:16
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 07/24/19 12:46:10
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 07/30/19 09:18:34
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 07/30/19 10:01:54
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/06/19 09:42:13
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/06/19 09:43:12
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/06/19 11:03:58
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/06/19 11:04:44
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/06/19 11:05:13
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/06/19 11:06:39
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/06/19 11:07:04
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/06/19 11:13:13
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/06/19 11:13:25
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/06/19 11:13:51
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/06/19 11:14:37
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/06/19 11:15:50
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/06/19 11:23:59
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/06/19 11:24:10
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/06/19 11:24:28
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/06/19 11:25:09
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/06/19 11:31:38
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/06/19 14:40:53
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/06/19 14:41:26
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/06/19 14:42:13
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/06/19 14:42:37
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/06/19 14:45:03
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/06/19 14:47:39
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/06/19 14:47:50
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/06/19 14:48:33
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/06/19 14:48:48
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/06/19 15:49:26
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/06/19 16:22:12
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/06/19 16:22:38
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/06/19 16:22:42
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/06/19 16:22:50
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/06/19 16:23:32
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/06/19 16:24:18
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/06/19 16:25:07
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/06/19 17:20:11
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/06/19 17:22:07
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/06/19 17:22:20
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/06/19 17:22:33
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/06/19 17:24:19
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/06/19 18:04:44
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/07/19 11:20:57
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/07/19 11:22:50
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/07/19 11:23:50
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/07/19 11:29:10
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/07/19 11:29:59
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/07/19 11:37:04
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/07/19 11:37:13
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/07/19 11:37:29
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/07/19 11:38:58
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/07/19 11:40:15
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/07/19 11:41:07
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/07/19 11:42:26
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/07/19 11:52:24
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/07/19 11:58:31
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/07/19 12:01:21
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/07/19 12:06:27
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/07/19 12:09:34
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/07/19 12:09:49
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/07/19 12:10:43
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/07/19 12:12:33
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/07/19 12:12:55
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/07/19 12:13:57
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/07/19 12:14:35
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/07/19 12:15:31
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/07/19 12:17:33
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/07/19 12:18:27
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/07/19 12:22:27
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/07/19 12:24:21
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/07/19 13:46:45
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/07/19 13:47:16
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/07/19 13:47:30
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/07/19 13:47:47
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/07/19 14:27:31
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/07/19 14:30:15
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/07/19 14:43:04
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/07/19 14:44:04
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/07/19 14:45:20
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/07/19 15:56:41
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/07/19 15:57:15
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/08/19 11:57:47
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/08/19 11:58:55
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/08/19 12:03:22
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/08/19 12:04:20
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/08/19 12:33:43
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/08/19 12:33:49
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/08/19 12:34:50
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/08/19 12:35:06
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/08/19 12:37:58
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/08/19 12:40:17
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/08/19 12:41:20
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/08/19 12:41:57
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/08/19 12:42:21
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/08/19 12:42:39
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/08/19 13:02:08
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/13/19 11:04:03
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/13/19 11:46:22
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/13/19 11:50:16
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/13/19 11:50:33
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/13/19 11:53:02
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/13/19 11:53:11
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/13/19 11:53:18
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/13/19 11:53:27
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/13/19 11:53:50
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/13/19 11:54:02
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/13/19 11:54:55
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/13/19 11:55:34
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/13/19 11:56:51
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/13/19 11:58:25
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/13/19 11:59:13
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/13/19 11:59:58
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/13/19 12:54:20
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/13/19 13:06:04
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/14/19 08:54:18
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 08/26/19 10:21:32
+
+Academic license - for non-commercial use only
