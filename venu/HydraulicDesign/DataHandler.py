@@ -30,6 +30,7 @@ class DataHandler(object):
 
     def __init__(self, file_path):
         self.name = "Data Handler"
+        self.nodeID = 0
         self.file_path = file_path
         self.manholes = []
         self.sections = []
