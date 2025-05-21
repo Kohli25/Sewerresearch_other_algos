@@ -24,6 +24,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 import os
 import sys
 import time
+import csv
 from pyinstrument import Profiler
 
 # Automatically add project root to sys.path
@@ -51,12 +52,13 @@ class RunHydraulicDesign(object):
         start_time = time.time()
 
         # Input file path
-        file = os.path.join(project_root, "Files", "Results_LiMathew.txt")
+        file = os.path.join(project_root, "Files", "Results_LiMathew_2.txt")
 
         # Read the file and create manholes and sections
         d = DataHandler(file)
         d.read_file()
-
+        print(d.manholes)
+        #3print(d.sections)
         # Generate layout graph
         lg = LayoutGraphbuilder(d)
         print("lg Name: ", lg.name)
@@ -66,7 +68,11 @@ class RunHydraulicDesign(object):
         gb = DesignGraphBuilder(d)
         print(gb.name)
         gb.build_and_solve()
-
+        solution_arcs=gb.solution
+        print(solution_arcs)
+        # Export arc data for second iteration
+        from Utilities.Exporter import export_arc_costs_to_layout_format
+        export_arc_costs_to_layout_format(solution_arcs)
         # Record the end time
         end_time = time.time()
         print(f"Total computational time: {end_time - start_time:.2f} seconds")
@@ -78,7 +84,9 @@ class RunHydraulicDesign(object):
             f.write(pr.output_text())
 
         print("FINISHED------------------------------------------------------")
-
+    
+    
+    
 
 if __name__ == "__main__":
     RunHydraulicDesign.run()

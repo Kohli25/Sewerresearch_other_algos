@@ -66,6 +66,7 @@ class DataHandler(object):
                         
                         # Create new manhole
                         m = Manhole.Manhole(m_id, x, y, z, out)
+                        
                         self.manholes.append(m)
                     else:
                         print("Error: Unexpected end of file while reading manholes.")
@@ -88,6 +89,7 @@ class DataHandler(object):
 
                         # Create new section
                         new_section = Section.Section(i, id_up, id_down, p_type, qd)
+                        
                         self.sections.append(new_section)
 
                         # Link sections to the corresponding manholes
@@ -99,3 +101,13 @@ class DataHandler(object):
                         print("Error: Unexpected end of file while reading sections.")
         except Exception as e:
             print(f"Error reading the file: {e}")
+
+
+    #     print("\n--- Manholes ---")
+    #     for mh in self.manholes:
+    #         print(f"Manhole ID: {mh.id}, X: {mh.coordinate_x}, Y: {mh.coordinate_y}, Z: {mh.coordinate_z}, Outlet: {mh.outlet}")
+
+    #     print("\n--- Sections ---")
+    #     for sec in self.sections:
+    #         print(f"Section ID: {sec.id_section}, From: {sec.upstream_manhole} → To: {sec.downstream_manhole}, "
+    #   f"Type: {sec.section_type}, Qd: {sec.section_flow_rate}")

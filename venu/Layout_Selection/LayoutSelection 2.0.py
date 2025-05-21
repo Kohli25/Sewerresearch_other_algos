@@ -38,7 +38,7 @@ M = 10000  # BIG number
 start_time = time.time()
 
 # Define the file path for LiMathew.txt
-file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'Files', 'LiMathew.txt'))
+file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'Files', 'LiMathew_2.txt'))
 if not os.path.exists(file_path):
     raise FileNotFoundError(f"File not found: {file_path}")
 
@@ -84,7 +84,7 @@ for i in range(numSections):
     inter[ab] = float(column[3])
 
 # Define the results file path
-results_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'Files', 'Results_LiMathew.txt'))
+results_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'Files', 'Results_LiMathew_2.txt'))
 results = open(results_path, "w")
 
 # Create a new model

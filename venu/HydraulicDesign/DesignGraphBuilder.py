@@ -45,7 +45,7 @@ class DesignGraphBuilder(object):
         """
         # ATTRIBUTES DECLARATION ---------------------------------------------------------------------------------------
         self.name = "Design GraphBuilder"
-
+        self.nodeID = 0
         # Instance of other Classes. They let you have access to all the methods and attributes of that class.
         self.dh = dh                # Instance of the Class DataHandler.
         self.ls_Node = LayoutNode   # Instance of the Class LayoutNode.
@@ -142,7 +142,7 @@ class DesignGraphBuilder(object):
         # Loop over the layout nodes of the last manhole to stat the connection of the design graph
         # from the outlet
         for ls_Node in last_m.layout_nodes:
-            print("Entered second for loop2")
+            #print("Entered second for loop2")
 
             # Append the current node to the list of layout nodes (manholes) pending for connection
             self.pending_LS_Node.append(ls_Node)
@@ -171,7 +171,7 @@ class DesignGraphBuilder(object):
 
 
                     for i in range(len(ls_node_down.nodes)):
-                        print("Entered second for loop3")
+                        #print("Entered second for loop3")
                         node_b = ls_node_down.nodes[i]
 
                         # Do not create vertical arcs for the outlet
