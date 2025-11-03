@@ -1,0 +1,22 @@
+# python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# venv
+.venv/
+venv/
+
+# vscode / IDE
+.vscode/
+.idea/
+
+# output artifacts
+output/
+*.png
+*.csv
+
+# OS trash
+.DS_Store
+Thumbs.db
