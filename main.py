@@ -7,20 +7,37 @@ from sewer_opt import (
     Node,
     SewerNetworkOptimizer,
     parse_sewer_file_1,
+    parse_sewer_file,
     build_weighted_graph,
     save_results_with_input_details,
     plot_graph_with_coords,
 )
-from sewer_opt.cli import get_pso_settings, ask_and_run_sensitivity
+from sewer_opt.cli import (
+    get_algorithm_choice, 
+    get_optimization_settings, 
+    ask_and_run_sensitivity,
+    ask_and_run_comparison
+)
 
 
 if __name__ == "__main__":
     # ===================== Input & settings =====================
-    Input_file = 'input/LiMathew_Revised.txt'
+    # Get the directory where this script is located
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    Input_file = os.path.join(script_dir, 'input', 'CedritosNorte.txt')
     Name = str(Input_file)
+    
+    # Ensure output directory exists
+    output_dir = os.path.join(script_dir, 'output')
+    os.makedirs(output_dir, exist_ok=True)
 
-    nodes_df, edges_df = parse_sewer_file_1(Input_file)
-    n_layouts, pso_particles, pso_iterations = get_pso_settings()
+    nodes_df, edges_df = parse_sewer_file(Input_file)
+    
+    # Get algorithm choice
+    algorithm, compare_all = get_algorithm_choice()
+    
+    # Get optimization settings
+    n_layouts, population_size, n_iterations = get_optimization_settings()
 
     # ===================== Graph build ==========================
     G, outlet_id = build_weighted_graph(nodes_df, edges_df)
@@ -49,11 +66,50 @@ if __name__ == "__main__":
     print(f"Starting Optimization Process for {Name}...")
     print("=" * 80)
 
-    results = optimizer.optimize_layout_sequence(
-        n_layouts,
-        pso_particles,
-        pso_iterations
-    )
+    # Run optimization
+    comparison_results = None
+    if compare_all:
+        # If comparing all, first find best layout using PSO
+        print("\n" + "=" * 80)
+        print("STEP 1: Finding Best Layout (using PSO)")
+        print("=" * 80)
+        temp_results = optimizer.optimize_layout_sequence(
+            n_layouts=min(3, n_layouts),  # Use fewer layouts for comparison
+            algorithm='PSO',
+            population_size=population_size,
+            n_iterations=n_iterations
+        )
+        best_tree = temp_results[0][3]  # Get best tree
+        
+        # Now compare all algorithms on best layout
+        comparison_results = optimizer.compare_algorithms(
+            best_tree,
+            population_size=population_size,
+            n_iterations=n_iterations
+        )
+        
+        # Use best algorithm result
+        best_algo = min(comparison_results.items(), key=lambda x: x[1]['cost'])[0]
+        best_cost = comparison_results[best_algo]['cost']
+        best_details = comparison_results[best_algo]['design_details']
+        best_layout_num = 1
+        best_cq = optimizer.calculate_cumulative_flow(best_tree)
+        
+        # Plot comparison
+        optimizer.plot_algorithm_comparison(
+            comparison_results,
+            save_path='output/algorithm_comparison.png'
+        )
+        
+        results = [(best_layout_num, best_cq, best_cost, best_tree, best_details)]
+    else:
+        # Run single algorithm
+        results = optimizer.optimize_layout_sequence(
+            n_layouts,
+            algorithm,
+            population_size,
+            n_iterations
+        )
 
     print("\n" + "=" * 80)
     print("OPTIMIZATION RESULTS - ALL LAYOUTS")
@@ -68,7 +124,7 @@ if __name__ == "__main__":
         best_layout_num, best_cq, best_cost, best_tree, best_details = results[0]
 
         # Save CSV
-        save_results_with_input_details(Input_file, nodes_df, nodes_data, best_details)
+        save_results_with_input_details(Input_file, nodes_df, nodes_data, best_details, output_dir=output_dir)
 
         print(f"\n✓ Best Layout: #{best_layout_num}")
         print(f"✓ Total Cumulative Flow (CQ): {best_cq:.4f} m³/s ({best_cq*1000:.2f} l/s)")
@@ -126,7 +182,8 @@ if __name__ == "__main__":
                   f"{d_str:<8} {prev_d_str:<10} {status_display:<25}")
             
         # plot the graph 
-        plot_graph_with_coords(best_tree,"output_graph",show_lengths=False,show_elevation=False)
+        plot_graph_with_coords(best_tree, "output_graph", show_lengths=False, show_elevation=False, 
+                              save_path=os.path.join(output_dir, 'result_layout.png'))
 
         print("-" * 140)
         print(f"Total Network Length: {total_length:.2f} m")
@@ -203,7 +260,9 @@ if __name__ == "__main__":
         
         
         
-        #============================================RUN SESITIVITY ANALYSIS=======================================
-
-        # sensitivity_results = ask_and_run_sensitivity(best_tree)
-        sensitivity_results = ask_and_run_sensitivity(optimizer, best_tree)
+        #============================================RUN ALGORITHM COMPARISON (if not already done)=======================================
+        if not compare_all:
+            comparison_results = ask_and_run_comparison(optimizer, best_tree, output_dir=output_dir)
+        
+        #============================================RUN SENSITIVITY ANALYSIS=======================================
+        sensitivity_results = ask_and_run_sensitivity(optimizer, best_tree, output_dir=output_dir)

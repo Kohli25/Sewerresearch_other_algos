@@ -1,11 +1,14 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import networkx as nx
-from typing import Dict, List, Tuple
+from typing import Dict, List, Tuple, Optional
 from .models import Node
 from .hydraulics import SewerHydraulics
 from .costs import CostCalculator
 from .pso import ModifiedPSO
+from .ga import GeneticAlgorithm
+from .adaptive_ga import AdaptiveGeneticAlgorithm
+from .aco import AntColonyOptimization
 from .spanning_tree import SpanningTreeGenerator
 
 
@@ -43,8 +46,9 @@ class SewerNetworkOptimizer:
                    self.nodes[v].wastewater_contribution) / 1000  # Convert l/s to m3/s
     
     def optimize_layout_sequence(self, n_layouts: int = 10, 
-                                 pso_particles: int = 100,
-                                 pso_iterations: int = 30):
+                                 algorithm: str = 'PSO',
+                                 population_size: int = 100,
+                                 n_iterations: int = 30):
         """Main optimization routine"""
         # Step 1: Generate spanning trees
         print("\n" + "=" * 80)
@@ -77,16 +81,18 @@ class SewerNetworkOptimizer:
         for i, (cq, _, length) in enumerate(layouts_with_cq[:10]):
             print(f"  Rank {i+1}: CQ = {cq:.4f} m³/s ({cq*1000:.2f} l/s), Length = {length:.2f} m")
         
-        # Step 4: Optimize each layout with Modified PSO
+        # Step 4: Optimize each layout with selected algorithm
         print("\n" + "=" * 80)
-        print("STEP 4: Optimizing Component Sizes with Modified PSO")
+        print(f"STEP 4: Optimizing Component Sizes with {algorithm}")
         print("=" * 80)
         results = []
         
         for i, (cq, tree, length) in enumerate(layouts_with_cq):
             print(f"\n--- Optimizing Layout {i+1}/{len(layouts_with_cq)} ---")
             print(f"    CQ = {cq:.4f} m³/s, Length = {length:.2f} m")
-            cost, design_details = self._optimize_component_sizing(tree, pso_particles, pso_iterations)
+            cost, design_details = self._optimize_component_sizing(
+                tree, algorithm, population_size, n_iterations
+            )
             results.append((i+1, cq, cost, tree, design_details))
             print(f"    Final Cost: Rs. {cost:,.2f}")
         
@@ -107,9 +113,10 @@ class SewerNetworkOptimizer:
         return results
     
     def _optimize_component_sizing(self, tree: nx.Graph, 
-                                   n_particles: int, 
-                                   n_iterations: int) -> Tuple[float, Dict]:
-        """Optimize component sizes for a given layout using Modified PSO"""
+                                   algorithm: str = 'PSO',
+                                   population_size: int = 100, 
+                                   n_iterations: int = 30) -> Tuple[float, Dict]:
+        """Optimize component sizes for a given layout using selected algorithm"""
         n_links = tree.number_of_edges()
         
         # Each link has 2 variables: diameter index and slope
@@ -127,9 +134,21 @@ class SewerNetworkOptimizer:
             cost, _ = self._evaluate_design(tree, x, available_diameters)
             return cost
         
-        # Run PSO
-        pso = ModifiedPSO(n_particles, n_iterations, n_dimensions)
-        best_solution, best_cost = pso.optimize(cost_function, bounds)
+        # Run selected algorithm
+        algorithm = algorithm.upper()
+        if algorithm == 'PSO':
+            optimizer = ModifiedPSO(population_size, n_iterations, n_dimensions)
+        elif algorithm == 'GA':
+            optimizer = GeneticAlgorithm(population_size, n_iterations, n_dimensions)
+        elif algorithm == 'AGA' or algorithm == 'ADAPTIVE_GA':
+            # Use Adaptive GA from the flowchart
+            optimizer = AdaptiveGeneticAlgorithm(population_size, n_iterations, n_dimensions)
+        elif algorithm == 'ACO':
+            optimizer = AntColonyOptimization(population_size, n_iterations, n_dimensions)
+        else:
+            raise ValueError(f"Unknown algorithm: {algorithm}. Choose from 'PSO', 'GA', 'AGA', or 'ACO'")
+        
+        best_solution, best_cost = optimizer.optimize(cost_function, bounds)
         
         # Get detailed design for best solution
         _, design_details = self._evaluate_design(tree, best_solution, available_diameters)
@@ -206,10 +225,14 @@ class SewerNetworkOptimizer:
         
         for i, (u, v, data) in enumerate(ordered_edges):
             # Extract design variables
-            d_idx = int(round(design[i * 2]))
+            # For diameter index, ensure proper rounding and clipping
+            d_idx_val = design[i * 2]
+            d_idx = int(np.round(d_idx_val))
             d_idx = np.clip(d_idx, 0, len(available_diameters) - 1)
             diameter = available_diameters[d_idx]
-            slope = design[i * 2 + 1]
+            
+            # For slope, ensure it's within bounds
+            slope = np.clip(design[i * 2 + 1], 0.0004, 0.02)
             
             # Progressive diameter constraint (Eq. 11): D_current >= D_preceding
             # For each upstream node feeding into current link, check its diameter
@@ -485,6 +508,134 @@ class SewerNetworkOptimizer:
             best_swarm = min(costs, key=costs.get)
             best_cost = costs[best_swarm]
             print(f"  {iterations} Iterations: Swarm = {best_swarm}, Cost = Rs. {best_cost:,.2f}")
+    
+    def compare_algorithms(self, best_tree: nx.Graph,
+                           population_size: int = 100,
+                           n_iterations: int = 30) -> Dict:
+        """
+        Compare PSO, GA, AGA, and ACO algorithms on the same layout
+        Returns comparison results with costs and convergence histories
+        """
+        print("\n" + "=" * 80)
+        print("ALGORITHM COMPARISON: PSO vs GA vs AGA vs ACO")
+        print("=" * 80)
+        
+        algorithms = ['PSO', 'GA', 'AGA', 'ACO']
+        results = {}
+        n_links = best_tree.number_of_edges()
+        n_dimensions = n_links * 2
+        
+        # Define bounds and cost function (same for all algorithms)
+        available_diameters = [0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.5]
+        bounds = []
+        for _ in range(n_links):
+            bounds.append((0, len(available_diameters) - 1))
+            bounds.append((0.0004, 0.02))
+        
+        def cost_function(x):
+            cost, _ = self._evaluate_design(best_tree, x, available_diameters)
+            return cost
+        
+        for algo in algorithms:
+            print(f"\n{'='*80}")
+            print(f"Running {algo}...")
+            print(f"{'='*80}")
+            
+            # Run optimization with convergence tracking
+            if algo == 'PSO':
+                optimizer = ModifiedPSO(population_size, n_iterations, n_dimensions)
+            elif algo == 'GA':
+                optimizer = GeneticAlgorithm(population_size, n_iterations, n_dimensions)
+            elif algo == 'AGA':
+                optimizer = AdaptiveGeneticAlgorithm(population_size, n_iterations, n_dimensions)
+            elif algo == 'ACO':
+                optimizer = AntColonyOptimization(population_size, n_iterations, n_dimensions)
+            
+            best_solution, best_cost = optimizer.optimize(cost_function, bounds)
+            
+            # Get convergence history
+            convergence = getattr(optimizer, 'convergence_history', [best_cost] * n_iterations)
+            if not convergence:
+                convergence = [best_cost] * n_iterations
+            
+            # Get detailed design
+            _, design_details = self._evaluate_design(best_tree, best_solution, available_diameters)
+            
+            results[algo] = {
+                'cost': best_cost,
+                'design_details': design_details,
+                'convergence': convergence,
+                'solution': best_solution
+            }
+            
+            print(f"\n{algo} Result: Rs. {best_cost:,.2f}")
+        
+        # Print comparison table
+        print("\n" + "=" * 80)
+        print("COMPARISON RESULTS")
+        print("=" * 80)
+        print(f"\n{'Algorithm':<12} {'Total Cost (Rs.)':<20} {'Rank':<8}")
+        print("-" * 45)
+        
+        sorted_results = sorted(results.items(), key=lambda x: x[1]['cost'])
+        for rank, (algo, data) in enumerate(sorted_results, 1):
+            marker = "★ BEST" if rank == 1 else ""
+            print(f"{algo:<12} {data['cost']:>18,.2f}  {rank:<8} {marker}")
+        
+        return results
+    
+    def plot_algorithm_comparison(self, comparison_results: Dict, 
+                                  save_path: str = 'output/algorithm_comparison.png'):
+        """
+        Plot comparison of algorithms
+        """
+        if not comparison_results:
+            print("No comparison results to plot.")
+            return
+        
+        fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(16, 6))
+        
+        # Plot 1: Cost comparison bar chart
+        algorithms = list(comparison_results.keys())
+        costs = [comparison_results[algo]['cost'] for algo in algorithms]
+        colors = ['#1f77b4', '#ff7f0e', '#2ca02c']
+        
+        bars = ax1.bar(algorithms, costs, color=colors[:len(algorithms)], alpha=0.7, edgecolor='black')
+        ax1.set_ylabel('Total Cost (Rs.)', fontsize=12, fontweight='bold')
+        ax1.set_title('Algorithm Cost Comparison', fontsize=14, fontweight='bold')
+        ax1.grid(True, alpha=0.3, axis='y')
+        
+        # Add value labels on bars
+        for bar, cost in zip(bars, costs):
+            height = bar.get_height()
+            ax1.text(bar.get_x() + bar.get_width()/2., height,
+                    f'Rs. {cost:,.0f}',
+                    ha='center', va='bottom', fontsize=10, fontweight='bold')
+        
+        # Plot 2: Convergence comparison (if available)
+        ax2.set_xlabel('Iteration', fontsize=12, fontweight='bold')
+        ax2.set_ylabel('Best Cost (Rs.)', fontsize=12, fontweight='bold')
+        ax2.set_title('Convergence Comparison', fontsize=14, fontweight='bold')
+        ax2.grid(True, alpha=0.3)
+        
+        for idx, algo in enumerate(algorithms):
+            convergence = comparison_results[algo].get('convergence', [])
+            if convergence:
+                iterations = range(len(convergence))
+                ax2.plot(iterations, convergence, 
+                        marker='o', markersize=4, linewidth=2,
+                        color=colors[idx], label=algo, alpha=0.7)
+        
+        ax2.legend(fontsize=10)
+        ax2.set_yscale('log')  # Log scale for better visualization
+        
+        plt.tight_layout()
+        
+        if save_path:
+            plt.savefig(save_path, dpi=300, bbox_inches='tight')
+            print(f"\nComparison plot saved to: {save_path}")
+        
+        plt.show()
         
         
 

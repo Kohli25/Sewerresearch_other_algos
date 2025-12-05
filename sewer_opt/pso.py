@@ -24,6 +24,7 @@ class ModifiedPSO:
         self.pbest_costs = None
         self.gbest = None
         self.gbest_cost = float('inf')
+        self.convergence_history = []  # Track convergence
         
     def optimize(self, cost_function, bounds: List[Tuple[float, float]]) -> Tuple:
         """
@@ -103,6 +104,9 @@ class ModifiedPSO:
                     if cost < self.gbest_cost:
                         self.gbest = self.particles[i].copy()
                         self.gbest_cost = cost
+            
+            # Track convergence
+            self.convergence_history.append(self.gbest_cost)
             
             if (t + 1) % 10 == 0:
                 print(f"Iteration {t+1}/{self.n_iterations}, Best Cost: {self.gbest_cost:.2f}")

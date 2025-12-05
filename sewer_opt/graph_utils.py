@@ -2,6 +2,7 @@ import pandas as pd
 import math
 import networkx as nx
 import matplotlib.pyplot as plt
+import os
 
 def build_weighted_graph(nodes_df, edges_df):
     """
@@ -103,8 +104,11 @@ def plot_graph_with_coords(G, title="Tree Plot", show_elevation=False, show_leng
     plt.tight_layout()
     
     # Save figure if path is provided
-    save_path="output/result_layout.png"
     if save_path:
+        # Ensure directory exists
+        save_dir = os.path.dirname(save_path)
+        if save_dir:  # Only create directory if path contains a directory
+            os.makedirs(save_dir, exist_ok=True)
         plt.savefig(save_path, dpi=300, bbox_inches='tight')
         print(f"Figure saved to: {save_path}")
     

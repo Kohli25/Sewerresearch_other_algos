@@ -2,6 +2,9 @@ from .models import Node, SewerLink
 from .hydraulics import SewerHydraulics
 from .costs import CostCalculator
 from .pso import ModifiedPSO
+from .ga import GeneticAlgorithm
+from .adaptive_ga import AdaptiveGeneticAlgorithm
+from .aco import AntColonyOptimization
 from .spanning_tree import SpanningTreeGenerator
 from .optimizer import SewerNetworkOptimizer
 from .parsers import parse_sewer_file, parse_sewer_file_1
